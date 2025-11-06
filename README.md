@@ -1,5 +1,5 @@
 # plusコマンド
-![test](https://github.com/Yuki468788/robosys2025/actions/workflows/test.yml/bagde.svg)
+![test](https://github.com/Yuki468788/robosys2025/actions/workflows/test.yml/badge.svg)
 
 表示入力から読み込んだ数字を足す。
 
