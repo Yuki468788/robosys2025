@@ -1,5 +1,5 @@
 # plusコマンド
-![test](https://github.com/Yuki468788/robosys2025/actions/workflows/test.yml)
+![test](https://github.com/Yuki468788/robosys2025/actions/workflows/test.yml/bagde.svg)
 
 表示入力から読み込んだ数字を足す。
 
@@ -12,3 +12,4 @@
 # robosys2025
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - © 2025 Yuki Akutsu
+
