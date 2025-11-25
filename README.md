@@ -1,6 +1,6 @@
 # thunder コマンド
 # 概要
-![test](https://github.com/Yuki468788/robosys2025/blob/main/.github/workflows/test.yml/badge.svg)
+[![test](https://github.com/Yuki468788/robosys2025/blob/main/.github/workflows/test.yml/badge.svg)](https://github.com/Yuki468788/robosys2025/blob/main/.github/workflows/test.yml)
 ターミナル上で雷が落ちてから音がなるまでの時間と気温をもとに雷までの距離が測定できるコマンド
 # 使い方
 ## リポジトリのクローン方法
