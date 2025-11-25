@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Yuki Akutsu
+# SPDX-License-Identifier: BSD-3-Clause
+import sys
+
+ans = 0
+default_temp = 15.0
+
+for line in sys.stdin:
+    try:parts = line.split()
+        
+        seconds = float(parts[0])
+
+        if len(parts) > 1:
+            temp = float(parts[1])
+        else:
+            temp = default_temp
+
+        ans = (331.5 + 0.6 * temp) * seconds
+
+    except:parts = line.split()
+
+        seconds = int(parts[0])
+
+        if len(parts) > 1:
+            temp = int(parts[1])
+        else:
+            temp = default_temp
+
+        ans = (331.5 + 0.6 * temp) * seconds
+        
+
+print(ans)
