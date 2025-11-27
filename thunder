@@ -21,19 +21,8 @@ for line in sys.stdin:
 
         ans = (331.5 + 0.6 * temp) * seconds
 
-    except:
-            parts = line.split()
-        if not parts:
-            continue
+    except ValueError:
 
-        seconds = int(parts[0])
-
-        if len(parts) > 1:
-            temp = int(parts[1])
-        else:
-            temp = default_temp
-
-        ans = (331.5 + 0.6 * temp) * seconds
-
-
+        ans = 0
+            
 print(ans)
