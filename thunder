@@ -9,12 +9,9 @@ default_temp = 15.0
 for line in sys.stdin:
     try:
         parts = line.split()
-        
-        # 空行などの対策
         if not parts:
             continue
 
-        # float()は "3" も "3.5" も両方変換できるのでこれだけでOK
         seconds = float(parts[0])
 
         if len(parts) > 1:
@@ -25,7 +22,18 @@ for line in sys.stdin:
         ans = (331.5 + 0.6 * temp) * seconds
 
     except:
-        # エラーが起きたら何もしない（次の行へ）
-        pass
+            parts = line.split()
+        if not parts:
+            continue
+
+        seconds = int(parts[0])
+
+        if len(parts) > 1:
+            temp = int(parts[1])
+        else:
+            temp = default_temp
+
+        ans = (331.5 + 0.6 * temp) * seconds
+
 
 print(ans)
