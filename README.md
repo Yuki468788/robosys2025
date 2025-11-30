@@ -35,6 +35,7 @@ echo 3 15 | ./thunder
 ## テスト環境
 -Ubuntu 22.04.5 LTS
 ## 謝辞
+- 参照したコード
 - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
     - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2025)
 ## ライセンス
