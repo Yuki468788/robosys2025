@@ -5,27 +5,15 @@
 # 使い方
 ## リポジトリのクローン方法
 以下のコマンドをターミナルで入力する
-- リポジトリをクローンする
 ```
-https://github.com/Yuki468788/robosys2025.git
-```
-- ディレクトリをrobosys2025に移動
-```
+git clone https://github.com/Yuki468788/robosys2025.git
 cd robosys2025
-```
-- 実行できるようにchmodを使用し権限を付与
-```
 chmod +x thunder
 ```
-- これによって実行が可能になる
 ## 実行方法
 標準入力を用いて、時間 気温の順番で下記のように入力
-- 実行例
 ```
 echo 3 15 | ./thunder
-```
-- 実行結果
-```
 1021.5
 ```
 ## 必要なソフトウェア
@@ -36,8 +24,8 @@ echo 3 15 | ./thunder
 -Ubuntu 22.04.5 LTS
 ## 謝辞
 - 参照したコード
-- このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
-    - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2025)
+  - このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
+    - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - © 2025 Yuki Akutsu
