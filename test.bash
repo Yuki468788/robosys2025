@@ -16,7 +16,8 @@ out=$(echo "10 0" | ./thunder)
 [ "${out}" = "3315.0" ] || ng "$LINENO"
 
 out=$(echo あ | ./thunder)
-[ "${out}" = "0" ] || ng "$LINENO"
+[ "$?" = "1" ] || ng "$LINENO"
+["${out}" = ""] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
 
