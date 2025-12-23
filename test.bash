@@ -8,7 +8,7 @@ ng () {
 }
 
 res=0
-
+ 
 out=$(echo 10 | ./thunder)
 [ "${out}" = "3405.0" ] || ng "$LINENO"
 
