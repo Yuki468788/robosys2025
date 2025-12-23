@@ -2,9 +2,6 @@
 # SPDX-FileCopyrightText: 2025 Yuki Akutsu
 # SPDX-License-Identifier: BSD-3-Clause
 
-#!/usr/bin/python3
-# SPDX-FileCopyrightText: 2025 Yuki Akutsu
-# SPDX-License-Identifier: BSD-3-Clause
 import sys
 
 def main():
