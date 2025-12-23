@@ -19,6 +19,18 @@ out=$(echo あ | ./thunder)
 [ "$?" = "1" ] || ng "$LINENO"
 ["${out}" = ""] || ng "$LINENO"
 
+out=$(echo a | ./thunder)
+[ "$?" = "1" ] || ng "$LINENO"
+["${out}" = ""] || ng "$LINENO"
+
+out=$(echo ~ | ./thunder)
+[ "$?" = "1" ] || ng "$LINENO"
+["${out}" = ""] || ng "$LINENO"
+
+out=$(echo | ./thunder)
+[ "$?" = "1" ] || ng "$LINENO"
+["${out}" = ""] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo OK
 
 exit $res
