@@ -1,28 +1,46 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2025 Yuki Akutsu
 # SPDX-License-Identifier: BSD-3-Clause
+
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Yuki Akutsu
+# SPDX-License-Identifier: BSD-3-Clause
 import sys
 
-ans = 0
-default_temp = 15.0
+def main():
+    ans = None
+    default_temp = 15.0
+    input_received = False
 
-for line in sys.stdin:
+    lines = sys.stdin.readlines()
+
+    if not lines or all(not line.strip() for line in lines):
+        sys.exit(1)
+
     try:
-        parts = line.split()
-        if not parts:
-            continue
+        for line in lines:
+            parts = line.split()
+            if not parts:
+                continue
 
-        seconds = float(parts[0])
+            seconds = float(parts[0])
+            input_received = True
 
-        if len(parts) > 1:
-            temp = float(parts[1])
-        else:
-            temp = default_temp
+            if len(parts) > 1:
+                temp = float(parts[1])
+            else:
+                temp = default_temp
 
-        ans = (331.5 + 0.6 * temp) * seconds
+            ans = (331.5 + 0.6 * temp) * seconds
+
+        if not input_received:
+            sys.exit(1)
+
+        if ans is not None:
+            print(ans)
 
     except ValueError:
+        sys.exit(1)
 
-        ans = 0
-            
-print(ans)
+if __name__ == "__main__":
+    main()
